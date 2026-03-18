@@ -25,3 +25,16 @@ spec:
 
         ports:
         - containerPort: 3000
+
+        env:
+        - name: MESSAGE
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: MESSAGE
+
+        - name: API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: API_KEY

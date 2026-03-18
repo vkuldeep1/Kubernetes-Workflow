@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>K8s Demo</title>
+</head>
+<body>
+  <h1>Frontend</h1>
+  <p id="data">Loading...</p>
+
+  <script>
+    fetch('/api')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('data').innerText = data;
+      });
+  </script>
+</body>
+</html>

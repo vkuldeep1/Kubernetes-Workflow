@@ -1,0 +1,22 @@
+namespace: dev
+
+frontend:
+  image: vkuldeep1/frontend-app
+  replicas: 1
+
+backend:
+  image: vkuldeep1/demo-node-app
+  replicas: 2
+
+redis:
+  image: redis:7-alpine
+  storage: 1Gi
+
+config:
+  MESSAGE: "Hello From Helm"
+
+secret:
+  API_KEY: "super-secret-key"
+
+ingress:
+  host: node.local
