@@ -341,7 +341,7 @@ Running containers
 → Designing infrastructure
 ```
 
-It covers the core concepts required to understand and operate Kubernetes in real-world scenarios.
+It covers the main core concepts required to understand and operate Kubernetes in real-world scenarios.
 
 ---
 
