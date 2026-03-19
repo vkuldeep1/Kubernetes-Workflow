@@ -13,7 +13,7 @@ const apikey = process.env.API_KEY || "No API Key"
 const server = http.createServer(async (req, res) => {
   let count = await client.incr("counter");
 
-  res.end(`${message} | Count: ${count} | API_KEY: ${apikey}\n`);
+  res.end(`${message} | Count: ${count} | API_KEY: ${apikey} | bwahahahhahahha l'-'l\n`);
 });
 
 server.listen(3000);
